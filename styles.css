@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Scroll Indicator */
+#scrollIndicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #00a2ff;
+    z-index: 100;
+}
+
+/* Header */
+header {
+    background-size: cover;;
+    background-image: url('bg.png');
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.photo-frame {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}
+
+.candidate-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.calon {
+    font-size: 21px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.highlighted-name {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0047ab;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+.slogan {
+    font-style: italic;
+    font-size: 1rem;
+    color: #e0f7ff;
+    margin-top: 1rem;
+}
+
+/* Sections */
+.section-content {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+}
+
+/* Feedback Form */
+#feedback textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #00a2ff;
+    border-radius: 5px;
+}
+
+#feedback button {
+    background: #00a2ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#feedback button:hover {
+    background: #0047ab;
+}
+
+/* Map */
+#map iframe {
+    border-radius: 10px;
+}
+
+/* Program Cards */
+.card {
+    background: #ffffff;
+    border: 1px solid #00a2ff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #b3e3ff;
+}
+
+.card h3 {
+    color: #0047ab;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Footer */
+footer {
+    background: #0047ab;
+    color: #e0f7ff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    border-top: 5px solid #00a2ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .highlighted-name {
+        font-size: 1.1rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .slogan {
+        font-size: 0.9rem;
+    }
+
+    .section-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .section-content p, .section-content ul li, .card p {
+        font-size: 0.95rem;
+    }
+}
+
+a {
+  text-decoration: none;
+  color: #0047ab;
+}
